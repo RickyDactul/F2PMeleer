@@ -54,9 +54,9 @@ public class Monster  {
                 setJunkItems(new String[] {});
                 area = getRandomMonsterArea(new Area[]{
                                 new Area(new Tile(3184, 3279, 0), new Tile(3196, 3276, 0)),
-                                //new Area(new Tile(3171, 3301, 0), new Tile(3183, 3290, 0)),
-                                //new Area(new Tile(3014, 3294, 0), new Tile(3019, 3282, 0)),
-                                //new Area(new Tile(3026, 3289, 0), new Tile(3037, 3282, 0))
+                                new Area(new Tile(3171, 3301, 0), new Tile(3183, 3290, 0)),
+                                new Area(new Tile(3014, 3294, 0), new Tile(3019, 3282, 0)),
+                                new Area(new Tile(3026, 3289, 0), new Tile(3037, 3282, 0))
                         }
                 );
                 break;
@@ -100,8 +100,8 @@ public class Monster  {
                 setLootables(new String[]{"Cowhide","Raw beef","Bones","Iron arrow","Mithril arrow"});
                 area = getRandomMonsterArea(new Area[]{
                         new Area(new Tile(3022, 3312, 0), new Tile(3041, 3299, 0)),
-//                        new Area(new Tile(3154, 3342, 0), new Tile(3197, 3318, 0)),
-//                        new Area(new Tile(3195, 3301, 0), new Tile(3209, 3284, 0))
+                        new Area(new Tile(3154, 3342, 0), new Tile(3197, 3318, 0)),
+                        new Area(new Tile(3195, 3301, 0), new Tile(3209, 3284, 0))
                 });
                 break;
             }
