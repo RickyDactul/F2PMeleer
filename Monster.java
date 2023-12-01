@@ -17,7 +17,6 @@ public class Monster  {
     private Area area;
 
     public Monster(String name) {
-        ArrayList<Tile> locations = new ArrayList<>();
         int defenceLevel = Skills.level(Skill.Defence);
         setName(name);
         switch(name) {
@@ -61,18 +60,17 @@ public class Monster  {
                 );
                 break;
             }
-            case "Seagull" : {
-                setAggresive(false);
-                level = 2;
-                setLootables(new String[]{"Bones","Iron arrow","Mithril arrow"});
-                setJunkItems(new String[]{});
-                locations.add(new Tile(3028,3236,0)); //Port Sarim Dock
-                area = getRandomMonsterArea(new Area[] {
-                        new Area(new Tile(3026, 3240, 0), new Tile(3029, 3202, 0))
-                        }
-                );
-                break;
-            }
+//            case "Seagull" : {
+//                setAggresive(false);
+//                level = 2;
+//                setLootables(new String[]{"Bones","Iron arrow","Mithril arrow"});
+//                setJunkItems(new String[]{});
+//                area = getRandomMonsterArea(new Area[] {
+//                        new Area(new Tile(3026, 3240, 0), new Tile(3029, 3202, 0))
+//                        }
+//                );
+//                break;
+//            }
 //            case "Giant frog" : {
 //                setAggresive(false);
 //                level = 13;
